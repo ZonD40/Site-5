@@ -3,9 +3,9 @@ import classes from './Header.module.sass';
 import { icons } from './icons';
 import callImg from '../../img/header/call-img.png';
 import ShoppingCartIcon from '../ShoppingCartIcon/ShoppingCartIcon';
+import MySearch from '../UI/MySearch/MySearch';
 
 const Header: React.FC = () => {
-	console.log(classes)
 	return (
 		<div className={classes.header}>
 			<div className={classes.subheader}>
@@ -39,12 +39,7 @@ const Header: React.FC = () => {
 					Каталог
 					<img src={icons.catalog} alt="catalog" />
 				</div>
-				<div className={classes.search}>
-					<input type="text" placeholder='Поиск...'/>
-					<div>
-						<img src={icons.search} alt="search" />
-					</div>
-				</div>
+				<MySearch/>
 				<div className={classes.call}>
 					<div>
 						<div className={classes.number}>{'+7 (777) 490-00-91'}</div>

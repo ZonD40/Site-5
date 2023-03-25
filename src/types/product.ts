@@ -1,6 +1,19 @@
+export interface Product {
+	pictureURL: string,
+	name: string,
+	sizeType: 'weight' | 'volume',
+	size: number,
+	id: number,
+	manufacturer: string,
+	brand: string,
+	description: string, 
+	price: number,
+	careType: string
+}
+
 
 export interface ProductState {
-	products: any[],
+	products: Product[],
 	loading: boolean,
 	error: null | string
 }
@@ -17,7 +30,7 @@ interface FetchProductAction {
 
 interface FetchProductActionSucces {
 	type: ProductActionTypes.FETCH_PRODUCT_SUCCESS,
-	payload: any[]
+	payload: Product[]
 }
 
 interface FetchProductActionError {
