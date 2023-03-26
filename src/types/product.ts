@@ -11,6 +11,9 @@ export interface Product {
 	careType: string
 }
 
+export interface ProductCardProps {
+	product: Product
+}
 
 export interface ProductState {
 	products: Product[],

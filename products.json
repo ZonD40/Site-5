@@ -1,7 +1,7 @@
 {
 	"products": [
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/4356316/img_id406127656011446938.jpeg/orig",
 			"name": "Увлажняющий крем для тела",
 			"sizeType": "weight",
 			"size": 180,
@@ -13,7 +13,7 @@
 			"careType": "Уход за телом"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/4012371/img_id5842724646504912866.jpeg/orig",
 			"name": "Крем для тела с кислотами и энзимами",
 			"sizeType": "volume",
 			"size": 250,
@@ -25,7 +25,7 @@
 			"careType": "Уход за телом"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/4372348/img_id701354360466396079.jpeg/orig",
 			"name": "Масло для тела",
 			"sizeType": "weight",
 			"size": 120,
@@ -37,7 +37,7 @@
 			"careType": "Уход за телом"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/3725687/img_id326299229064169350.jpeg/orig",
 			"name": "Кондиционер для тела Глубокое увлажнение",
 			"sizeType": "volume",
 			"size": 250,
@@ -49,7 +49,7 @@
 			"careType": "Уход за телом"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/3732535/img_id8953491225654085448.jpeg/orig",
 			"name": "бальзам натуральный Стимулирующий для роста и против выпадения волос",
 			"sizeType": "volume",
 			"size": 250,
@@ -61,7 +61,7 @@
 			"careType": "Уход за волосами"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/3612791/img_id2339276838975679083.jpeg/orig",
 			"name": "Пилинг-активатор для кожи головы",
 			"sizeType": "volume",
 			"size": 120,
@@ -73,7 +73,7 @@
 			"careType": "Уход за волосами"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/1808939/img_id2772294109507161677.png/orig",
 			"name": "Спрей для волос увлажняющий",
 			"sizeType": "volume",
 			"size": 200,
@@ -85,7 +85,7 @@
 			"careType": "Уход за волосами"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/5454584/img_id2292573080221246154.jpeg/orig",
 			"name": "кондиционер несмываемый",
 			"sizeType": "volume",
 			"size": 120,
@@ -97,7 +97,7 @@
 			"careType": "Уход за волосами"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/4581218/img_id7110210462717951726.jpeg/orig",
 			"name": "крем для лица Суперувлажнение и восстановление с мочевиной",
 			"sizeType": "volume",
 			"size": 300,
@@ -109,7 +109,7 @@
 			"careType": "Уход за лицом"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/5313128/img_id7077362461782085372.jpeg/orig",
 			"name": "Рассасывающая маска с поросуживающим эффектом",
 			"sizeType": "volume",
 			"size": 100,
@@ -121,7 +121,7 @@
 			"careType": "Уход за лицом"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/4585707/img_id8567158138821105567.jpeg/orig",
 			"name": "пенка для умывания мягкокислотная очищающая",
 			"sizeType": "volume",
 			"size": 250,
@@ -133,7 +133,7 @@
 			"careType": "Уход за лицом"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/3698270/img_id8590604383554609929.png/orig",
 			"name": "Натуральный тоник гидролат Шалфей",
 			"sizeType": "volume",
 			"size": 150,
@@ -145,7 +145,7 @@
 			"careType": "Уход за лицом"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/5312993/img_id2491730389914311154.jpeg/orig",
 			"name": "Базовое покрытие",
 			"sizeType": "volume",
 			"size": 100,
@@ -157,7 +157,7 @@
 			"careType": "Уход за ногтями"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/5207395/img_id5313006570205255577.jpeg/orig",
 			"name": "Базовое покрытие",
 			"sizeType": "volume",
 			"size": 75,
@@ -169,7 +169,7 @@
 			"careType": "Уход за ногтями"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/372220/img_id6285688055030905458.jpeg/orig",
 			"name": "Гель Регенерирующий",
 			"sizeType": "volume",
 			"size": 120,
@@ -181,7 +181,7 @@
 			"careType": "Уход за ногтями"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/4342845/img_id7241073603708456009.jpeg/orig",
 			"name": "Минеральная паста",
 			"sizeType": "volume",
 			"size": 230,
@@ -193,7 +193,7 @@
 			"careType": "Уход за ногтями"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/4867510/img_id7276122022601262930.jpeg/orig",
 			"name": "Бальзам для рук",
 			"sizeType": "volume",
 			"size": 300,
@@ -205,7 +205,7 @@
 			"careType": "Уход за кожей рук"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/4448884/img_id3154749175059546256.jpeg/orig",
 			"name": "Крем для рук",
 			"sizeType": "volume",
 			"size": 550,
@@ -217,7 +217,7 @@
 			"careType": "Уход за кожей рук"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/5159019/img_id8573535148718582701.png/orig",
 			"name": "Крем для рук питательный Ароматная маракуйя",
 			"sizeType": "weight",
 			"size": 30,
@@ -229,7 +229,7 @@
 			"careType": "Уход за кожей рук"
 		},
 		{
-			"pictureURL": "",
+			"pictureURL": "https://avatars.mds.yandex.net/get-mpic/3749045/img_id4339183439945701767.jpeg/orig",
 			"name": "Крем для рук Питательный ночной",
 			"sizeType": "volume",
 			"size": 80,
