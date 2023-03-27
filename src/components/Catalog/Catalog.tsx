@@ -6,6 +6,7 @@ import { AppDispatch } from '../../types/AppDispatch';
 import Filters from '../Filters/Filters';
 import ProductCard from '../ProductCard/ProductCard';
 import classes from './Catalog.module.sass';
+import loadingRing from '../../icon/loading/loading.svg';
 
 
 const Catalog: React.FC = () => {
@@ -18,7 +19,10 @@ const Catalog: React.FC = () => {
 	
 
 	if (loading) {
-		return <h1>Идет Загрузка</h1>
+		console.log(loadingRing)
+		return <div>
+			 {loadingRing}
+		</div>
 	}
 	if (error) {
 		return <h1>Произошла ошибка</h1>

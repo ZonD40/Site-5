@@ -9,7 +9,7 @@ const ProductCard: React.FC<ProductCardProps> = (props) => {
 	const { brand, id, manufacturer, name, pictureURL, price, size, sizeType } = props.product;
 
 	return (
-		<div id={String(id)} className={classes.card}>
+		<div className={classes.card}>
 			<div className={classes.img}>
 				<img src={pictureURL} alt="productImg" />
 			</div>

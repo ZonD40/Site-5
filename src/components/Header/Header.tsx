@@ -32,7 +32,6 @@ const Header: React.FC = () => {
 					<div className={classes.link}>Контакты</div>
 				</div>
 			</div>
-			<hr />
 			<div className={classes.mainBlock}>
 				<img src={icons.logo} alt="logo" />
 				<div className={classes.button}>
@@ -57,7 +56,6 @@ const Header: React.FC = () => {
 				</div>
 				<ShoppingCartIcon/>
 			</div>
-			<hr />
 		</div>
 	); 
 };
