@@ -6,7 +6,13 @@ import { useTypedSelector } from '../../hooks/useTypedSeletor';
 
 
 const Pages: React.FC = () => {
-	const {totalCount} = useTypedSelector(state => state.filter);
+	const {totalCount} = useTypedSelector(state => state.product);
+	const pagesCount = Math.ceil(totalCount / 25);
+	const pages = [];
+	
+	for (let p = 1; p <= pagesCount; p++) {
+		pages.push(<div>p</div>);
+	}
 
 	return (
 		<div className={classes.pages}>
@@ -17,6 +23,9 @@ const Pages: React.FC = () => {
 				<div>3</div>
 				<div>4</div>
 				<div>5</div>
+				{for (let i = 1; i <= pages; i++) {
+					<div>
+				}}
 			</div>
 			<img className={classes.arrowRight} src={arrowRight} alt="arrowRight" />
 		</div>

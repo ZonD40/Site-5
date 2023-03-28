@@ -1,5 +1,4 @@
 import { Dispatch } from 'redux';
-import { FilterAction, FilterActionTypes } from './../../types/filter';
 import { ProductAction, ProductActionTypes } from './../../types/product';
 
 export const fetchProduct = () => {
@@ -16,12 +15,11 @@ export const fetchProduct = () => {
 			const productArray = await response.json();
 			dispatch({
 				type: ProductActionTypes.FETCH_PRODUCT_SUCCESS,
-				payload: productArray
+				payload: {
+					product: productArray,
+					totalCount: XTotalCount
+				}
 			});
-			dispatch({
-				type: FilterActionTypes.SET_TOTAL_COUNT,
-				payload: XTotalCount
-			})
 		} catch(e) {
 			dispatch({
 				type: ProductActionTypes.FETCH_PRODUCT_ERROR, 

@@ -16,6 +16,7 @@ export interface ProductCardProps {
 }
 
 export interface ProductState {
+	totalCount: number,
 	products: Product[],
 	loading: boolean,
 	error: null | string
@@ -34,6 +35,7 @@ interface FetchProductAction {
 interface FetchProductActionSuccess {
 	type: ProductActionTypes.FETCH_PRODUCT_SUCCESS,
 	payload: {
+		totalCount: number,
 		product: Product[],
 	}
 }
