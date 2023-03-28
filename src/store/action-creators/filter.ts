@@ -1,8 +1,17 @@
+import { FilterAction, FilterActionTypes } from './../../types/filter';
 import { Dispatch } from 'redux';
-import { ProductAction, ProductActionTypes } from './../../types/product';
 
-export const fetchProduct = (page: number) => {
-	return async (dispatch: Dispatch<ProductAction>) => {
+export const changePage = (page: number) => {
+	return async (dispatch: Dispatch<FilterAction>) => {
+		dispatch({
+			type: FilterActionTypes.CHANGE_PAGE,
+			payload: page
+		});
+	}
+}
+
+export const fetchBrands = () => {
+	return async (dispatch: Dispatch<FilterAction>) => {
 		try {
 			dispatch({type: ProductActionTypes.FETCH_PRODUCT});
 

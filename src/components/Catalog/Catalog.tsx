@@ -12,17 +12,18 @@ import TopFilters from '../TopFilters/TopFilters';
 
 
 const Catalog: React.FC = () => {
+	const {currentPage} = useTypedSelector(state => state.filter);
 	const {products, error, loading} = useTypedSelector(state => state.product);
 	const dispatch: AppDispatch = useDispatch();
 	
 	useEffect(() => { 
-		dispatch(fetchProduct());
-	}, []);
+		dispatch(fetchProduct(currentPage));
+	}, [currentPage]);
 	
 
 	if (loading) {
 		return <div>
-			 {loadingRing}
+			<img className={classes.loading} src={loadingRing} alt="loading" />
 		</div>
 	}
 	if (error) {
