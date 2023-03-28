@@ -31,9 +31,11 @@ interface FetchProductAction {
 	type: ProductActionTypes.FETCH_PRODUCT
 }
 
-interface FetchProductActionSucces {
+interface FetchProductActionSuccess {
 	type: ProductActionTypes.FETCH_PRODUCT_SUCCESS,
-	payload: Product[]
+	payload: {
+		product: Product[],
+	}
 }
 
 interface FetchProductActionError {
@@ -41,4 +43,4 @@ interface FetchProductActionError {
 	payload: string
 }
 
-export type ProductAction = FetchProductAction | FetchProductActionSucces | FetchProductActionError;
+export type ProductAction = FetchProductAction | FetchProductActionSuccess | FetchProductActionError;

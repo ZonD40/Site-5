@@ -7,6 +7,8 @@ import Filters from '../Filters/Filters';
 import ProductCard from '../ProductCard/ProductCard';
 import classes from './Catalog.module.sass';
 import loadingRing from '../../icon/loading/loading.svg';
+import Pages from '../Pages/Pages';
+import TopFilters from '../TopFilters/TopFilters';
 
 
 const Catalog: React.FC = () => {
@@ -19,7 +21,6 @@ const Catalog: React.FC = () => {
 	
 
 	if (loading) {
-		console.log(loadingRing)
 		return <div>
 			 {loadingRing}
 		</div>
@@ -46,19 +47,14 @@ const Catalog: React.FC = () => {
 					</select>
 				</div>
 			</div>
-			<div className={classes.filterBlocks}>
-				<div>Уход за телом</div>
-				<div>Уход за волосами</div>
-				<div>Уход за лицом</div>
-				<div>Уход за ногтями</div>
-				<div>Уход за кожей рук</div>
-			</div>
+			<TopFilters/>
 			<div className={classes.wrapper}>
-			<Filters/>
+				<Filters/>
 				<div className={classes.products}>
 					{products.map((product) => <ProductCard product={product} /> )}
 				</div>
 			</div>
+			<Pages/>
 
 			
 		</div>

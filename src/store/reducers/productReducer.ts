@@ -17,7 +17,7 @@ export function productReducer(state = initialState, action: ProductAction): Pro
 			};
 		case ProductActionTypes.FETCH_PRODUCT_SUCCESS:
 			return {
-				products: action.payload,
+				products: action.payload.product,
 				loading: false,
 				error: null
 			};

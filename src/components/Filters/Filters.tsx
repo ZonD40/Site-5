@@ -17,23 +17,25 @@ const Filters: React.FC = () => {
 			</div>
 			<div className={classes.manufacturer}>
 				<div className={classes.manufacturerTitle}>Производитель</div>
-				<MySearch/>
+				<div className={classes.manufacturerSearch}>
+					<MySearch/>
+				</div>
 				<ul className={classes.manufacturerList}>
 					<li>
 						<input type="checkbox" />
-						{'Grifon (56)'}
+						Grifon <span>{'(56)'}</span>
 					</li>
 					<li>
 						<input type="checkbox" />
-						{'Grifon (56)'}
+						Grifon <span>{'(56)'}</span>
 					</li>
 					<li>
 						<input type="checkbox" />
-						{'Grifon (56)'}
+						Grifon <span>{'(56)'}</span>
 					</li>
 				</ul>
 				<div className={classes.manufacturerShowAll}>
-					Показать все &#9660;
+					Показать все <span> &#9660;</span>
 				</div>
 			</div>
 			<hr />

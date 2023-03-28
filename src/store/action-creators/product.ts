@@ -1,4 +1,5 @@
-	import { Dispatch } from 'redux';
+import { Dispatch } from 'redux';
+import { FilterAction, FilterActionTypes } from './../../types/filter';
 import { ProductAction, ProductActionTypes } from './../../types/product';
 
 export const fetchProduct = () => {
@@ -11,11 +12,16 @@ export const fetchProduct = () => {
 			url.searchParams.set('_limit', '15');
 
 			const response = await fetch(url);
+			const XTotalCount = Number(response.headers.get('X-Total-Count'));
 			const productArray = await response.json();
 			dispatch({
 				type: ProductActionTypes.FETCH_PRODUCT_SUCCESS,
 				payload: productArray
 			});
+			dispatch({
+				type: FilterActionTypes.SET_TOTAL_COUNT,
+				payload: XTotalCount
+			})
 		} catch(e) {
 			dispatch({
 				type: ProductActionTypes.FETCH_PRODUCT_ERROR, 
