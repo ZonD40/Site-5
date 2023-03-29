@@ -9,17 +9,17 @@ import classes from './Catalog.module.sass';
 import loadingRing from '../../icon/loading/loading.svg';
 import Pages from '../Pages/Pages';
 import TopFilters from '../TopFilters/TopFilters';
+import { fetchBrands } from '../../store/action-creators/filter';
 
 
 const Catalog: React.FC = () => {
-	const {currentPage} = useTypedSelector(state => state.filter);
+	const {currentPage, brands} = useTypedSelector(state => state.filter);
 	const {products, error, loading} = useTypedSelector(state => state.product);
 	const dispatch: AppDispatch = useDispatch();
 	
 	useEffect(() => { 
 		dispatch(fetchProduct(currentPage));
 	}, [currentPage]);
-	
 
 	if (loading) {
 		return <div>

@@ -13,25 +13,19 @@ export const changePage = (page: number) => {
 export const fetchBrands = () => {
 	return async (dispatch: Dispatch<FilterAction>) => {
 		try {
-			dispatch({type: ProductActionTypes.FETCH_PRODUCT});
+			dispatch({type: FilterActionTypes.FETCH_BRANDS});
 
-			const url = new URL('http://localhost:3001/products');
-			url.searchParams.set('_page', String(page));
-			url.searchParams.set('_limit', '15');
+			const url = new URL('http://localhost:3001/brands');
 
 			const response = await fetch(url);
-			const XTotalCount = Number(response.headers.get('X-Total-Count'));
-			const productArray = await response.json();
+			const brandsArray = await response.json();
 			dispatch({
-				type: ProductActionTypes.FETCH_PRODUCT_SUCCESS,
-				payload: {
-					product: productArray,
-					totalCount: XTotalCount
-				}
+				type: FilterActionTypes.FETCH_BRANDS_SUCCESS,
+				payload: brandsArray
 			});
 		} catch(e) {
 			dispatch({
-				type: ProductActionTypes.FETCH_PRODUCT_ERROR, 
+				type: FilterActionTypes.FETCH_BRANDS_ERROR, 
 				payload: 'Произошла ошибка при загрузке данных!'
 			});
 		}

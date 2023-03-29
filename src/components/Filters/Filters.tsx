@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classes from './Filters.module.sass';
 import MySearch from '../UI/MySearch/MySearch';
 import deleteIcon from '../../icon/filters/delete.svg';
+import { useTypedSelector } from '../../hooks/useTypedSeletor';
+import { fetchBrands } from '../../store/action-creators/filter';
+import { AppDispatch } from '../../types/AppDispatch';
+import { useDispatch } from 'react-redux';
+import loadingRing from '../../icon/loading/loading.svg';
 
 const Filters: React.FC = () => {
+	const { brands, error, loading } = useTypedSelector(state => state.filter);
+	const dispatch: AppDispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(fetchBrands());
+	}, [])
+	console.log(brands);
+
+	if (loading) {
+		return <div>
+			<img className={classes.loading} src={loadingRing} alt="loading" />
+		</div>
+	}
+	if (error) {
+		return <h1>Произошла ошибка</h1>
+	}
+
 	return (
 		<div className={classes.filters}>
 			<div className={classes.filtersTitle}>ПОДБОР ПО ПАРАМЕТРАМ</div>
@@ -21,18 +43,12 @@ const Filters: React.FC = () => {
 					<MySearch/>
 				</div>
 				<ul className={classes.manufacturerList}>
-					<li>
-						<input type="checkbox" />
-						Grifon <span>{'(56)'}</span>
-					</li>
-					<li>
-						<input type="checkbox" />
-						Grifon <span>{'(56)'}</span>
-					</li>
-					<li>
-						<input type="checkbox" />
-						Grifon <span>{'(56)'}</span>
-					</li>
+					{brands.map((brand) => 
+						<li>
+							<input type="checkbox" /> 
+							{brand} <span>{'(56)'}</span>
+						</li>
+					)}
 				</ul>
 				<div className={classes.manufacturerShowAll}>
 					Показать все <span> &#9660;</span>

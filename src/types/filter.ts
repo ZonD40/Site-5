@@ -24,10 +24,7 @@ interface FetchBrandsAction {
 
 interface FetchBrandsActionSuccess {
 	type: FilterActionTypes.FETCH_BRANDS_SUCCESS,
-	payload: {
-		totalCount: number,
-		product: string[],
-	}
+	payload: string[]
 }
 
 interface FetchBrandsActionError {

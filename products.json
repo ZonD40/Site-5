@@ -240,6 +240,36 @@
 			"price": 110,
 			"careType": "Уход за кожей рук"
 		}
+	],
+	"brands": [
+		{
+			"name": "The Act",
+			"count": 1
+		},
+		{
+			"name": "Acid Cloud",
+			"count": 1
+		},
+		{
+			"name": "Бархатные ручки",
+			"count": 1
+		},
+		{
+			"name": "Young",
+			"count": 1
+		},
+		{
+			"name": "Professional Cream oil",
+			"count": 1
+		},
+		{
+			"name": "Professional Super Velvet Balm",
+			"count": 1
+		},
+		{
+			"name": "Ni",
+			"count": 1
+		},
 	]
 	
 }

@@ -26,6 +26,12 @@ export function filterReducer(state = initialState, action: FilterAction): Filte
 				brands: action.payload,
 				loading: false,
 			}
+		case FilterActionTypes.FETCH_BRANDS_ERROR:
+			return {
+				...state, 
+				loading: false,
+				error: action.payload
+			}
 		default:
 			return state;
 	}
