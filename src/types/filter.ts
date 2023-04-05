@@ -1,6 +1,9 @@
 
 export interface FilterState {
-	brands: string[],
+	brands: {
+		name: string,
+		count: number
+	}[],
 	currentPage: number,
 	loading: boolean,
 	error: string | null 
@@ -24,7 +27,10 @@ interface FetchBrandsAction {
 
 interface FetchBrandsActionSuccess {
 	type: FilterActionTypes.FETCH_BRANDS_SUCCESS,
-	payload: string[]
+	payload: {
+		name: string,
+		count: number
+	}[]
 }
 
 interface FetchBrandsActionError {

@@ -11,11 +11,11 @@ import loadingRing from '../../icon/loading/loading.svg';
 const Filters: React.FC = () => {
 	const { brands, error, loading } = useTypedSelector(state => state.filter);
 	const dispatch: AppDispatch = useDispatch();
-
+	console.log(brands[0]);
 	useEffect(() => {
 		dispatch(fetchBrands());
 	}, [])
-	console.log(brands);
+	// console.log(brands);
 
 	if (loading) {
 		return <div>
@@ -46,7 +46,7 @@ const Filters: React.FC = () => {
 					{brands.map((brand) => 
 						<li>
 							<input type="checkbox" /> 
-							{brand} <span>{'(56)'}</span>
+							{brand.name} <span>{`(${brand.count})`}</span>
 						</li>
 					)}
 				</ul>
